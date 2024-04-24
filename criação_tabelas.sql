@@ -1,3 +1,4 @@
+-- Criação da tabela de artistas
 CREATE TABLE artist (
 	artist_id INTEGER,
 	full_name VARCHAR,
@@ -10,6 +11,7 @@ CREATE TABLE artist (
 	death INT
 )
 
+-- Importanto dados para a tabela artistas
 COPY artist from 'C:\Users\Pichau\Desktop\Projeto Alexandre\artist.csv' CSV HEADER DELIMITER ',';
 
 SELECT * FROM artist
